@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 import Header from './Header'
 import SingleNumberAnalysis from './analyses/SingleNumberAnalysis';
+import BarChartAnalysis from './analyses/BarChartAnalysis';
 import './App.css';
 
 export default function App() {
@@ -10,7 +11,7 @@ export default function App() {
       <Header/>
       <Dashboard>
         <SingleNumberAnalysis/>
-        <SingleNumberAnalysis/>
+        <BarChartAnalysis/>
       </Dashboard>
     </div>
   );

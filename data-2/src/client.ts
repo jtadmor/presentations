@@ -1,12 +1,7 @@
 import mockHourlyDeffectCount from "./mockHourlyDeffectCount";
+import {HourlyDeffectCount} from './types'
 
 const startOfDay = 9;
-
-type HourlyDeffectCount = {
-  label: string;
-  timestamp: number;
-  value: number;
-}
 
 export async function getDailyDeffectCount(): Promise<number> {
   const startTime = getStartOfDayTimestamp();

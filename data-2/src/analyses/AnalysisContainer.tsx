@@ -11,6 +11,7 @@ const Container = styled.div`
   border: solid #aaaaaa 2px;
   border-radius: 1%;
   margin: 0.2rem;
+  height: 400px;
 `;
 
 const TitleContainer = styled.div`
@@ -20,6 +21,10 @@ const TitleContainer = styled.div`
 `;
 
 const ChartContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 
 
