@@ -21,6 +21,15 @@ app.get('/', (req, res) => {
   res.send('Up and running');
 });
 
+app.get('/dailyDeffectCount', async (req, res)=> {
+  const { rows } = await pool.query(`
+    SELECT value from events_1 ORDER BY time DESC LIMIT 1;
+  `);
+  const result = rows[0].value;
+
+  res.send(JSON.stringify({result}));
+})
+
 app.get('/variables', async (req, res) => {
   const { rows } = await pool.query(`
     SELECT * from variables
