@@ -18,8 +18,8 @@ export default function BarChartAnalysis(){
 
   return <AnalysisContainer title="Deffect count by hour">
      <Chart
-      width={'500px'}
-      height={'300px'}
+      width={'90%'}
+      height={'350px'}
       chartType="Bar"
       loader={<div>...</div>}
       data={[
@@ -27,7 +27,7 @@ export default function BarChartAnalysis(){
         ...data.map(({label, value}) => [label, value])
       ]}
       options={{
-
+        legend: { position: 'none'},
       }}
       // For tests
       rootProps={{ 'data-testid': '2' }}
